@@ -1,0 +1,55 @@
+#skip{
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus{
+    left: 10px;
+    padding:5px;
+    border: 2px;
+    background-color: yellow;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 10px;
+    padding: 30;
+
+}
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: burlywood;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+
+nav a:active {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+
+header{
+    background-color: cornflowerblue;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* TESTS */
