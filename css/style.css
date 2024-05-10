@@ -18,8 +18,8 @@ body{
 
 }
 nav {
-    background: #d0f0e1;
-    border: solid 6px #b69d7b;
+    /* background: #6ee7ef; */
+    /* border: solid 6px #b69d7b; */
     text-align: center;
     margin-top: 20px;
 }
@@ -31,24 +31,24 @@ nav a {
     margin: 0 10px;
     border: 2px solid transparent;
     border-radius: 20px;
-    background-color: burlywood;
-    color: #000000;
+    background-color:  #5085A5;
+    color: #ffffff;
 }
 
 nav a:hover {
-    background-color: darkorange;
-    color: white;
+    background-color: #8FC1E3;
+    color: rgb(0, 0, 0);
 }
 
 
 nav a:active {
-    background-color: darkgoldenrod;
+    background-color: #8FC1E3;
     color: white;
 }
 
 
 header {
-    background-color: cornflowerblue;
+    background-color: #31708E;
     padding: 20px;
 }
 
@@ -113,3 +113,29 @@ html{
         width: 80%;
     }
 }
+
+
+#arti {
+    display: flex;
+    flex-direction: column-reverse; /* Display flex items in a column-reverse direction */
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h1{
+    color: white;
+}
+
+/* .current {
+    font-size: 28px;
+    border-top: 2px solid yellow;
+    display: inline-block;
+    width: 75px;
+} */
+/* .current::before{
+    content: "&#9752"; &#x2618";
+} */
