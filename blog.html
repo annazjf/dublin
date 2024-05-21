@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Exploring Ireland: A Study Abroad Journey</title>
+    <title>Blogs for Dublin</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/accordion.css"/>
 </head>
 <body>
 
 <a href = "#main" id = "skip">Skip to the Main Content</a>
 
 <header>
-    <h1>Exploring Ireland: A Study Abroad Journey</h1>
+    <h1>My Travel Blog</h1>
     <nav>
         <a href="index.html">About Us</a>
         <a href="dublin.html">Dublin</a>
         <a href="kilkenny.html">Kilkenny</a>
         <a href="glendalough.html">Glendalough</a>
+        <a href="belfast.html">Belfast</a>
         <a href="galway.html">Galway</a>
         <a href="cliffs.html">Cliffs of Moher</a>
         <a href="blog.html" class = "current">Blog</a>
@@ -27,41 +29,63 @@
 </header>
 
 <main id = "main">
-    <h1>Blog</h1>
+    <h1>My Blog</h1>
     <div id="arti">
     <article>
-        <h3>Exploring Dublin: A City of History and Culture</h3>
-        <time datetime="2024-05-07">May 7, 2024</time>
+        <button class = "accordion"><h3>Exploring Dublin: A City of History and Culture</h3><time datetime="2024-05-07">May 7, 2024</time></button>
+        <div class = "panel">
         <p>Dublin is a pretty walkable city to explore and is very suitable for coffee lovers. It has rich cultural history related to the rebellion against British government in the history.
         </p>
         <p>I learned from the bus tour that the Irish people experienced extreme poverty and famine due to the negligence of the British governance. People were suffering from the poor living condition and diseases. During the rebellion, women play an important part in the war and many bullet holes are still shows on the historical building walls. As I just arrived this morning, I was really tired for the whole day but still tried my best to stay awake :D </p> 
-        <a href="https://www.phoenixpark.ie/">Learn about Phoenixpark</a><br>
-        <a href="https://en.wikipedia.org/wiki/Dublin">Dublin Introduction</a><br>
+        <a href="https://www.phoenixpark.ie/">Learn about Phoenixpark</a>
+        <a href="https://en.wikipedia.org/wiki/Dublin">Dublin Introduction</a>
         <a href="https://en.wikipedia.org/wiki/Dublin_Castle">Dublin Castle</a>
-        <br>
-        <br>
-        <img src="images/bus.jpeg" alt="whisky tasting" width="200">
-        <img src="images/tree.jpeg" alt="tree on road" width="200">
-        <img src="images/white_castle.jpeg" alt="white castle" width="200">
-        <img src="images/bridge.jpeg" alt="Ireland bridge" width="200">
+        <figure>
+            <img src="images/bus.jpeg" alt="red bus running on a street with different stores next to it" width="200">
+            <figcaption>Red bus</figcaption>
+        </figure>
+        <figure>
+            <img src="images/tree.jpeg" alt="tree on road in a square shape at the central street of Dublin" width="200">
+            <figcaption>Tree at the central street</figcaption>
+        </figure>
+        <figure>
+            <img src="images/white_castle.jpeg" alt="white castle at Phoenix Park" width="200">
+            <figcaption>White castle at Phoenix Park</figcaption>
+        </figure>
+        <figure>
+            <img src="images/bridge.jpeg" alt="halfpenny bridge in a cloudy weather" width="200">
+            <figcaption>Halfpenny bridge</figcaption>
+        </figure>
+        </div>        
     </article>
     <article>
-        <h3>Whisky Museum Visit & Mall Exploration</h3>
-        <time datetime="2024-05-08">May 8, 2024</time>
+        <button class = "accordion"><h3>Whisky Museum Visit & Mall Exploration</h3>
+            <time datetime="2024-05-08">May 8, 2024</time>
+        </button>
+        <div class = "panel">
         <p>Today I had my first HTML and CSS course in the morning. In the afternoon after a brief lunch, I headed to the Javir shopping center to get my esim card for Ireland and took a lot of pictures on my way there about the street and architectures. I bought some postcards and a discounted green Claddagh ring on my way to the Whisky Museum. </p>
         <p>Inside the museum, I learned a lot about how the whisky is been made and its history. During the old age, Irish people got introduced to alcohol by the perfume bring by the monks from the middle east. They later developed whisky to cure people from diseases and to drink during a party. The top of the whisky in the barrel is methane which is poisonous.  There are a lot of illegal alcohol trade going on in Ireland compared in England and Scotland, and they got along with it by stating that they don't understand English. Because making alcohol is illegal at that time, people bury the barrel in the forest and sometimes forgot where they buried them :0 Although Ireland has a lot of potatoes, they use barley to make whisky. The flavor of whisky is from the combination of alcohol and the motion of shrinking and expanding of the wooden barrel. The sugar and flavor from the wood would then transport to the whisky through the temperature changes. If they mix the malt (processed the barley with hot water) with the bare barley, it will generate an oilier taste. Some brand of whisky is been purchased by French people when Irish whisky got unpopular. </p>
-        <a href="https://irishwhiskeymuseum.ie/">Irish Whisky Museum Website</a><br> 
-        <a href="https://en.wikipedia.org/wiki/Whisky">Whisky Introduction</a> <br>
+        <a href="https://irishwhiskeymuseum.ie/">Irish Whisky Museum Website</a>
+        <a href="https://en.wikipedia.org/wiki/Whisky">Whisky Introduction</a> 
         <a href="https://en.wikipedia.org/wiki/Claddagh_ring">Claddagh Ring Info</a> 
-        <br>
-        <br>
-        <a href="https://irishwhiskeymuseum.ie/">
-            <img src="images/whiskies.jpeg" alt="whisky tasting" width="200">
+        <figure>
+            <img src="images/whiskies.jpeg" alt="whisky tasting whith 4 different options" width="200">
+            <figcaption>Whisky tasting at the whisky museum</figcaption>
+        </figure>
         </a>
-        <img src="images/street.jpeg" alt="street scene" width="200">
-        <img src="images/street_corner.jpeg" alt="street corner scene" width="200">
-        <img src="images/colorful_wall.jpeg" alt="whisky museum wall" width="200">
-        
+        <figure>
+            <img src="images/street.jpeg" alt="street scene next to the cathedral with different building" width="200">
+            <figcaption>Street scene</figcaption>
+        </figure>
+        <figure>
+            <img src="images/street_corner.jpeg" alt="street corner scene next to a bridge with a red tower building" width="200">
+            <figcaption>Street corner scene</figcaption>
+        </figure>
+        <figure>
+            <img src="images/colorful_wall.jpeg" alt="whisky museum wall with a lot of colorful cards" width="200">
+            <figcaption>Whisky museum wall</figcaption>
+        </figure>
+        </div>    
     </article>
     <article>
         <h3>Guest Lecture with Dr David Williams & Saint Patrick Cathedral Visit</h3>
@@ -75,11 +99,32 @@
         <p> I went to the EPIC Irish Emigration Museum and learned about the emigration history of Ireland. The museum is divided by several small sections with different topics, and I collected stamps on my museum passport for each section. In the history, the driving force of the Irish emigration is because of multiple reasons like political disagreement, starving, unrecognized identity. They emigrate not because of they want to travel, but because they have no choice.  The unmarried women and gay population will be banished to the colony because the government think it's unworthy for them to live in Irish back at that time, and people leave their land due to starvation or financial crises. The traveling condition won't be easy and a lot of them died on their way to the new land.</p>
         <p>This forced emigration, on the other hand, builds the history and fostered the culture communication and humanity development. The Irish emigrants contribute to multiple fields such as human right advocation, art, and sports industry. While they faced discrimination form the British, they thrived to make our world better. 
         </p>
-        <a href="https://epicchq.com/">The Irish Emigration Museum</a> <br>
+        <a href="https://epicchq.com/">The Irish Emigration Museum</a>
     </article>
+
+    <article>
+        <h3>Microsoft</h3>
+        <time datetime="2024-05-015">May 15, 2024</time>
+        <p> It was a great opportunity visiting the Microsoft head quarter in the afternoon touring their building and learning about AI. The building is in a modern style integrated decorative blocks in different colors represent Microsoft. We got to see the meeting room, the resting area with cat shaped pillow, tearoom and Ping pong table, and the yoga room. It doesn't feel like an office, more like a living area with all sorts of functionality integrated inside the building. The employee here could have massage, go to the small clinic, take a nap all inside the office. </p>
+
+        <p>Our guide who introduced us to the office is responsible to connect customer with the Microsoft produce. Microsoft corporate customer will use their full suite for their company for the best connectivity between software.  This made me think of the internship last summer where UPS also used the full Microsoft Office for company operation. In this case, Microsoft is aiming AI as the future opportunity, but it is not a competitor with Open AI as Microsoft hold a large portion of Open AI stock and Open AI target common customers and the companies that did not adopt Microsoft Office. In general, this visit gave me a vision of working in a large tech company and prompting me to dive deeper into AI in my following semesters.</p>
+        <a href="https://www.microsoft.com/en-ie/aboutireland">Microsoft Ireland</a>
+    </article>
+
+    <article>
+        <h3>Google</h3>
+        <time datetime="2024-05-017">May 17, 2024</time>
+        <p> Google as another big tech company other than Microsoft have similar style of the Office building. The interior design fully took advantage of vibrant colors which makes it feels modern and relaxing. Different than Microsoft which only have one main building, Google have a lot of small and packed buildings in the dockland of Ireland. Because of the large debt that the Ireland government faced in the history, the government sold a lot of buildings to foreign companies and Google acquired a lot of them that formed a google town. </p>
+
+        <p>Google feels more like an idea hub where employees could go anywhere inside the building they want to work. I think google really emphasized the value of ideas and did the best to make employees feel comfortable and relaxed in terms of working environment to help them be productive. Although the Google buildings that we went feels more packed than the Microsoft headquarters, they have prettier scenery from the window. They even have free food for employees! All googlers love this perk, but one of them told me that he tried not to eat the snacks form the company because most people gained weight when they first working for google. People from different part of the world come to Ireland to work for big tech companies. Where people from originally won't determine where they will go; the ability to adapt and fit into the culture with passion and knowledge is the key for the future. 
+        </p>
+        <a href="https://www.officeinspiration.com/en/offices/google_dublin/">Google Ireland</a>
+    </article>
+
     </div>  
 
     <!-- Add more articles for each blog post -->
 </main>
+<script src="js/accordion.js"></script>
 </body>
 </html>

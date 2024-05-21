@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kilkenny</title>
+    <title>Kilkenny Experience</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="icon" type="image/png" href="images/cover2.png">
 </head>
@@ -16,6 +17,7 @@
         <a href="dublin.html">Dublin</a>
         <a href="kilkenny.html">Kilkenny</a>
         <a href="glendalough.html" class = "current">Glendalough</a>
+        <a href="belfast.html">Belfast</a>
         <a href="galway.html">Galway</a>
         <a href="cliffs.html">Cliffs of Moher</a>
         <a href="blog.html">Blog</a>
@@ -23,37 +25,121 @@
     </nav>
     
 </header> 
-<main>    
+<main id = "main">    
     <section id="about">
         <h2>About Glendalough</h2>
-        <p>Glendalough is such an amazing place to spend a day with nature.  We spend some time at the monastic site to see the round tower and the St Kevin’s Church. It’s impressive to witness stone houses in such an ancient town could still last till today without the help of cement but purely be built up with stone. There are even some sheep behind the round tower, and I can tell that they just shaved :> </p>
+        <p>Glendalough is such an amazing place to spend a day with nature.  We spend some time at the monastic site to see the round tower and the <span aria-label="Saint">St.</span>Kevin's Church. It's impressive to witness stone houses in such an ancient town could still last till today without the help of cement but purely be built up with stone. There are even some sheep behind the round tower, and I can tell that they just shaved :> </p>
         <p>After visiting the historical site, I walked towards the river which is a fascinating trail around the mountain. The tree and grass are extremely green. With the creek path curving through the forest, it feels like emerged in a fairy tale. The lake is very clear which makes me tempted to walk into the water!
         </p>
         <p>In a stunning glaciated valley in County Wicklow, in the sixth century, one of Ireland's most revered saints founded a monastery. The foundation of St Kevin at Glendalough became one of the most famous religious centres in Europe.</p>
         <p>The remains of this 'Monastic City', which are dotted across the glen, include a superb round tower, numerous medieval stone churches and some decorated crosses. Of particular note is St Kevin's Bed, a small man-made cave in the cliff face above the Upper Lake. It is said that St Kevin lived and prayed there, but it may actually be a prehistoric burial place that far predates him.</p>
-        <a href="https://en.wikipedia.org/wiki/Glendalough">Learn about Glendalough</a><br>
+        <a href="https://en.wikipedia.org/wiki/Glendalough">Learn about Glendalough</a>
     </section>
 
     <section class="image-scroll">
         <h2>Gallery</h2>
         <div class="image-grid">
-            <img src="images/Glendalough/dogs.jpeg" alt="dogs playing" width="200" tabindex="0">
-            <img src="images/Glendalough/duck1.jpeg" alt="duck" width="200" tabindex="0">
-            <img src="images/Glendalough/duck2.JPG" alt="another duck" width="200" tabindex="0">
-            <img src="images/Glendalough/forest.jpeg" alt="green nature forest" width="200" tabindex="0">
-            <img src="images/Glendalough/graveyard.jpeg" alt="graveyard" width="200" tabindex="0">
-            <img src="images/Glendalough/house.jpeg" alt="antient house" width="200" tabindex="0">
-            <img src="images/Glendalough/me_standing_tower.jpeg" alt="me standing infront of the tower" width="200" tabindex="0">
-            <img src="images/Glendalough/mewalking.jpeg" alt="me walking in the forest" width="200" tabindex="0">
-            <img src="images/Glendalough/river.jpeg" alt="clear river" width="200" tabindex="0">
-            <img src="images/Glendalough/standing_on_stone.jpeg" alt="me standing beside the lake" width="200" tabindex="0">
-            <img src="images/Glendalough/tower.jpeg" alt="tower" width="200" tabindex="0">
-            <img src="images/Glendalough/tree.jpeg" alt="green tree" width="200" tabindex="0">
-            <img src="images/Glendalough/visiting_center.jpeg" alt="Glendalough visiting center" width="200" tabindex="0">
-            <img src="images/Glendalough/wall.jpeg" alt="ancient wall" width="200" tabindex="0">
+            <figure>
+                <a href="images/Glendalough/dogs.jpeg" data-lightbox="glendalough" data-title="Two dogs playing and running in the lake having fun">
+                    <img src="images/Glendalough/dogs.jpeg" alt="two dogs playing and running in the lake having fun" width="200" tabindex="0">
+                </a>
+                <figcaption>Dogs playing</figcaption>
+            </figure>            
+            <figure>
+                <a href="images/Glendalough/duck1.jpeg" data-lightbox="glendalough" data-title="A duck drinking water or finding food in the lake">
+                    <img src="images/Glendalough/duck1.jpeg" alt="a duck drinking water or finding food in the lake" width="200" tabindex="0">
+                </a>
+                <figcaption>A duck by the lake</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/duck2.JPG" data-lightbox="glendalough" data-title="A duck resting at the shore">
+                    <img src="images/Glendalough/duck2.JPG" alt="a duck resting at the shore" width="200" tabindex="0">
+                </a>
+                <figcaption>A duck resting at the shore</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/forest.jpeg" data-lightbox="glendalough" data-title="Green nature forest with stones covered with moss and trees">
+                    <img src="images/Glendalough/forest.jpeg" alt="green nature forest with stones covered with moss and trees" width="200" tabindex="0">
+                </a>
+                <figcaption>Forest scene</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/graveyard.jpeg" data-lightbox="glendalough" data-title="Graveyard with sheep behind">
+                    <img src="images/Glendalough/graveyard.jpeg" alt="graveyard with sheep behind" width="200" tabindex="0">
+                </a>
+                <figcaption>Monastery graveyard</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/house.jpeg" data-lightbox="glendalough" data-title="Ancient monastery built up with stone">
+                    <img src="images/Glendalough/house.jpeg" alt="ancient monastery built up with stone" width="200" tabindex="0">
+                </a>
+                <figcaption>Ancient monastery building</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/me_standing_tower.jpeg" data-lightbox="glendalough" data-title="Me standing in front of the round tower and the graveyard">
+                    <img src="images/Glendalough/me_standing_tower.jpeg" alt="me standing in front of the round tower and the graveyard" width="200" tabindex="0">
+                </a>
+                <figcaption>My pic of round tower and the graveyard</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/mewalking.jpeg" data-lightbox="glendalough" data-title="Me walking in the forest trail with my hat on">
+                    <img src="images/Glendalough/mewalking.jpeg" alt="me walking in the forest trail with my hat on" width="200" tabindex="0">
+                </a>
+                <figcaption>The forest trail</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/river.jpeg" data-lightbox="glendalough" data-title="Clear creek in the forest with stones underneath">
+                    <img src="images/Glendalough/river.jpeg" alt="clear creek in the forest with stones underneath" width="200" tabindex="0">
+                </a>
+                <figcaption>Clear creek</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/standing_on_stone.jpeg" data-lightbox="glendalough" data-title="Me standing beside the lake on a stone holding my hat">
+                    <img src="images/Glendalough/standing_on_stone.jpeg" alt="me standing beside the lake on a stone holding my hat" width="200" tabindex="0">
+                </a>
+                <figcaption>Me standing beside the lake</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/tower.jpeg" data-lightbox="glendalough" data-title="Round tower scene from far away">
+                    <img src="images/Glendalough/tower.jpeg" alt="round tower scene from far away" width="200" tabindex="0">
+                </a>
+                <figcaption>Round tower scenery</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/tree.jpeg" data-lightbox="glendalough" data-title="An interesting green tree with a branch that could hold a person lying just like in a fairy tale">
+                    <img src="images/Glendalough/tree.jpeg" alt="an interesting green tree with a branch that could hold a person lying just like in a fairy tale" width="200" tabindex="0">
+                </a>
+                <figcaption>A forest tree</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/visiting_center.jpeg" data-lightbox="glendalough" data-title="Glendalough visiting center back door wall with the name written on it">
+                    <img src="images/Glendalough/visiting_center.jpeg" alt="Glendalough visiting center back door wall with the name written on it" width="200" tabindex="0">
+                </a>
+                <figcaption>Glendalough visiting center</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/Glendalough/wall.jpeg" data-lightbox="glendalough" data-title="Ancient wall from the monastery with a hollow arc window">
+                    <img src="images/Glendalough/wall.jpeg" alt="ancient wall from the monastery with a hollow arc window" width="200" tabindex="0">
+                </a>
+                <figcaption>Ancient arc window</figcaption>
+            </figure>
+            
+            
         </div>
     </section>
 </main>
-
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

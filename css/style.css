@@ -2,7 +2,9 @@
     position: absolute;
     left: -500px;
 }
-
+*{
+    box-sizing: border-box;
+}
 #skip:focus{
     left: 100px;
     padding:5px;
@@ -12,9 +14,22 @@
 }
 
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F6E9B2;
+}
+
+h1, h2, h3{
+    font-family: Calibri,Arial,Helvetica,Sans-Serif;;
+}
+
+/* h3{
+    margin-top: 45px;
+} */
+
+h2{
+    font-size: 30px;
 }
 
 nav {
@@ -91,55 +106,55 @@ html{
     margin: auto;
 }
 
-.image-grid img:hover, .image-grid img:focus {
+/* .image-grid img:hover, .image-grid img:focus {
     opacity: 1;
-} */
+} */ 
 
-@media screen and (min-width: 775px){
-    .image-grid{
-        grid-template-columns: 45% 45%;
-        grid-gap: 20px;
-        justify-content: center;
-    }
+.image-grid figure{
+    width: 90%;
+    margin:auto;
+    padding: 20px;
 }
 
-
-@media screen and (min-width: 990px){
-    .image-grid{
-        grid-template-columns: 30% 30% 30%;
-    }
-
-    .image-grid figure:last-child{
-        /* Undoing the style from the tablet view.
-        Set the column back to auto and reset the width back to 80% */
-        grid-column: auto;
-        width: 80%;
-    }
+.image-grid figure:hover, .image-grid figure:focus {
+    opacity: 1;
 }
 
+#about{
+    padding-bottom:15px;
+}
 
 #arti {
     display: flex;
     flex-direction: column-reverse; /* Display flex items in a column-reverse direction */
 }
 
-
-h1{
-    color: white;
+.figure {
+    color:white
 }
 
+h1{
+    color: white
+}
+
+#main {
+    padding: 70px; 
+}
+#main h1{
+    color:#0a0a0a
+}
 
 /* Styles for the blog posts */
 #arti {
-    margin-top: 20px; /* Add some space between the header and the blog posts */
+    margin-top: 20px;
 }
 
 article {
-    background-color: #f9f9f9; /* Light gray background color for each blog post */
-    padding: 20px; /* Add padding around each blog post */
-    margin-bottom: 20px; /* Add some space between each blog post */
-    border-radius: 8px; /* Add rounded corners to each blog post */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ccc;
 }
 
@@ -164,27 +179,37 @@ article a {
 }
 
 article figure {
-    /* display: block; Ensure images are displayed as block elements */
-    margin: 10px auto; /* Center-align images and add some margin */
+    /* display: block;  */
+    margin: 10px auto;
     border-radius: 4px; /* Add rounded corners to images */
 }
 
 
 /* Styles for the scrollable image gallery */
-.image-scroll {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent line breaks between images */
-    margin: 20px 0; /* Add margin above and below the gallery */
+.image-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 15px;
 }
 
 .image-scroll figure {
-    display: inline-block; /* Display images in a row */
-    max-width: 200px; /* Limit the maximum width of each image */
-    margin-right: 10px; /* Add some space between images */
-    border-radius: 4px; /* Add rounded corners to images */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    display: inline-block; 
+    opacity: .6;
+    width: 70%;
+    margin: auto; 
+    margin-top: 50px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-color: #0a0a0a;
+    background-color: white
+}
+.image-scroll figure img{
+    width: 100%;
 }
 
+.image-scroll figure:hover {
+    opacity: 1;
+}
 
 .image-scroll figure:nth-child(even) {
     transform: rotate(25deg);
@@ -219,8 +244,40 @@ article figure {
 
   @keyframes photomove3 {
     from { transform: rotate(0deg);
-   bottom: 550px }
+   bottom: 300px }
     to { transform: rotate(360deg);
     bottom: 0px}
   }
 
+
+  @media screen and (min-width: 775px){
+    .image-grid{
+        grid-template-columns: 45% 45%;
+        grid-gap: 20px;
+        justify-content: space-around;
+    }
+
+}
+
+
+@media screen and (min-width: 990px){
+    .image-grid{
+        grid-template-columns: 30% 30% 30%;
+    }
+
+    .image-grid figure:last-child{
+        /* Undoing the style from the tablet view.
+        Set the column back to auto and reset the width back to 80% */
+        grid-column: auto;
+        width: 80%;
+    }
+}
+
+@media all and (prefers-reduced-motion: reduce){
+    .image-grid figure
+    {
+        transform: rotate(0deg) !important;
+        animation: none !important;
+        
+    }
+}
