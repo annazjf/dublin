@@ -48,15 +48,15 @@
   }
 
   .accordion:after {
-    content: '\02795 open'; /* Unicode character for "plus" sign (+) */
+    content: '\02795 Open it here'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: white;
+    color: rgb(0, 0, 0);
     float: right;
     margin-left: 5px;
   }
   
   .active:after {
-    content: '\2796 close '; 
+    content: '\2796 Close it here'; 
     font-size: 13px;
     color: #ffffff;
     float: right;

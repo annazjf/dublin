@@ -140,7 +140,7 @@ h1{
 }
 
 #main {
-    padding: 90px; 
+    padding: 20px; 
 }
 #main h1{
     color:#0a0a0a
@@ -175,9 +175,11 @@ article p {
 }
 
 article a {
-    color: #007bff; /* Change link color to a shade of blue */
-    text-decoration:underline; /* Remove underline from links */
-    font-weight: bold; /* Make links bold */
+    display: block;
+    color: #007bff; 
+    text-decoration:underline; 
+    font-weight: bold;
+
 }
 
 article figure {
@@ -283,6 +285,9 @@ footer {
         grid-gap: 20px;
         justify-content: space-around;
     }
+    #main{ 
+        margin: 30px;
+    }
 
 }
 
@@ -297,6 +302,10 @@ footer {
         Set the column back to auto and reset the width back to 80% */
         grid-column: auto;
         width: 80%;
+    }
+
+    #main{ 
+        margin: 50px;
     }
 }
 
