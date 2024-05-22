@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cliffs of Moher Experience</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="icon" type="image/png" href="images/cover2.png">
 </head>
@@ -25,17 +26,36 @@
 </header> 
 <main id = "main">    
     <section id="about">
-        <h2>About Cliffs</h2>
-        <p>We went to Kilkenny and Glandelaugh for a one day trip and the weather is great. For Kilkenny, we went to see the kilkenny castle, the market, and walked around the town. It's a very cute town perfect for some relaxing time with coffee shop, perfume shop, street singers around. Kilkenny Castle was the principal seat of the Butlers (the famouse chololate family), earls, marquesses and dukes of Ormond for almost 600 years built in the twelfth century. The castle even feels like a palace owned by the royal family with so many rooms inside. Under the powerful Butler family, Kilkenny grew into a thriving and vibrant city. Its lively atmosphere can still be felt today.</p>
-        <a href="https://en.wikipedia.org/wiki/Kilkenny">Learn about Kilkenny</a><br>
+        <h2>About Cliffs of Moher</h2>
+        <p>The Cliffs of Moher, a stunning natural wonder located on the west coast of Ireland in County Clare, rise majestically from the Atlantic Ocean, reaching heights of up to 214 meters (702 feet). Stretching for about 8 kilometers (5 miles), these dramatic cliffs offer breathtaking panoramic views of the rugged coastline and are a haven for diverse wildlife, including numerous seabird species. As one of Ireland's most visited tourist attractions, the Cliffs of Moher provide a captivating blend of scenic beauty, geological significance, and cultural heritage, attracting nature enthusiasts, photographers, and adventure seekers from around the world. Visitors can explore various trails, take in the views from the O'Brien's Tower, and immerse themselves in the rich history and folklore surrounding this iconic landscape.</p>
+        <a href="https://en.wikipedia.org/wiki/Cliffs_of_Moher">Learn about the Cliffs of Moher</a><br>
     </section>
 
     <section class="image-scroll">
         <h2>Gallery</h2>
         <div class="image-grid">
-            <img src="images/kilkenny/kcastle.jpeg" alt="myself pointing at the castle" width="200" tabindex="0">
+            <figure>
+                <a href="images/Cliffs/cliff_and_bird.jpeg" data-lightbox="Cliffs of Moher" data-title="cliffs and a bird flying"><img src="images/Cliffs/cliff_and_bird.jpeg" alt="cliffs and a bird flying" width="200" tabindex="0"></a>
+                <figcaption>The cliffs scene</figcaption>
+            </figure>
+            <figure>
+                <a href="images/Cliffs/cliffs.jpeg" data-lightbox="Cliffs of Moher" data-title="cliffs scene"><img src="images/Cliffs/cliffs.jpeg" alt="cliffs scene" width="200" tabindex="0"></a>
+                <figcaption>The cliffs</figcaption>
+            </figure>
+            <figure>
+                <a href="images/Cliffs/cow.jpeg" data-lightbox="Cliffs of Moher" data-title="A cow near the cliffs"><img src="images/Cliffs/cow.jpeg" alt="a cow near the cliffs" width="200" tabindex="0"></a>
+                <figcaption>The cow</figcaption>
+            </figure>
+            <figure>
+                <a href="images/Cliffs/castle.jpeg" data-lightbox="Cliffs of Moher" data-title="The O'Brien's Tower"><img src="images/Cliffs/castle.jpeg" alt="The O'Brien's Tower near the cliff" width="200" tabindex="0"></a>
+                <figcaption>The O'Brien's Tower</figcaption>
+            </figure>
         </div>
     </section>
 </main>
+<footer>
+    <p>&copy; Annabel Zhuang 2024 Study Abroad to Ireland</p>
+</footer>
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

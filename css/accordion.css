@@ -10,6 +10,10 @@
     transition: 0.4s;
   }
   
+  .accordion h3 {
+    font-size: large;
+  }
+
   @media (prefers-reduced-motion){
     .panel {
       transition: none;
@@ -27,7 +31,7 @@
 
   .active{
     background-color: #0c6847;
-    border:5px solid green;
+    border:5px solid grey;
   }
 
   .active h3, .active time{
@@ -60,4 +64,8 @@
 
   }
 
+  .active :hover {
+    text-decoration-color: black;
+  }
+  
   

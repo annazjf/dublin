@@ -20,13 +20,14 @@ body{
     background-color: #F6E9B2;
 }
 
+
 h1, h2, h3{
-    font-family: Calibri,Arial,Helvetica,Sans-Serif;;
+    font-family: Calibri,Arial,Helvetica,Sans-Serif;
 }
 
-/* h3{
+h3{
     margin-top: 45px;
-} */
+}
 
 h2{
     font-size: 30px;
@@ -48,7 +49,6 @@ nav a {
     margin: 0 10px;
     border: 2px solid transparent;
     border-radius: 20px;
-    background-color:  F6E9B2;
     color: #ffffff;
 }
 
@@ -71,7 +71,7 @@ nav .current::before {
 header {
     background-color: #0A6847;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 html{
@@ -100,11 +100,7 @@ html{
 
 }
 
-.image-grid img:last-child{
-    grid-column: 1 / -1;
-    width: 50%;
-    margin: auto;
-}
+
 
 /* .image-grid img:hover, .image-grid img:focus {
     opacity: 1;
@@ -115,6 +111,12 @@ html{
     margin:auto;
     padding: 20px;
 }
+
+/* .image-grid figure:last-child{
+    grid-column: 1 / -1;
+    width: 50%;
+    margin: auto;
+} */
 
 .image-grid figure:hover, .image-grid figure:focus {
     opacity: 1;
@@ -138,7 +140,7 @@ h1{
 }
 
 #main {
-    padding: 70px; 
+    padding: 90px; 
 }
 #main h1{
     color:#0a0a0a
@@ -231,6 +233,31 @@ article figure {
 }
 
 
+.image-card figure {
+    display: inline-block; 
+    opacity: .6;
+    width: 70%;
+    margin: auto; 
+    margin-top: 50px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-color: #0a0a0a;
+    background-color: white
+}
+.image-card figure img{
+    width: 100%;
+}
+
+.image-card figure:hover {
+    opacity: 1;
+}
+
+footer {
+    background-color: #0A6847; /* Dark grey background */
+    color: white; /* White text */
+    padding: 20px; /* Some padding for spacing */
+    text-align: center; /* Center-align text */
+}
 
 @keyframes photomove1 {
     from { transform: rotate(0deg);}
@@ -281,3 +308,10 @@ article figure {
         
     }
 }
+
+
+
+
+
+
+

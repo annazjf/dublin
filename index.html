@@ -6,6 +6,7 @@
     <!-- https://www.favicon.cc/ -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Ireland Study Abroad Journey</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" type="image/png" href="images/cover2.png">
 </head>
@@ -33,23 +34,32 @@
     <section id="about">
         <h2>About Me</h2>
         <img src="images/me.jpg" alt="">
-        <p>Welcome to our digital travel log documenting our study abroad adventure in Ireland! Our journey takes us through the bustling streets of Dublin, the historic town of Kilkenny, the vibrant city of Galway, and the breathtaking Cliffs of Moher. Join us as we explore the rich culture, stunning landscapes, and warm hospitality of the Emerald Isle.&#9752</p>
+        <p>Welcome to my digital travel log documenting my study abroad adventure in Ireland! My name is Annabel, a senior studying Information Analysis at the University of Michigan. Our journey takes us through the bustling streets of Dublin, the historic town of Kilkenny, the vibrant city of Galway, and the breathtaking Cliffs of Moher. Join us as we explore the rich culture, stunning landscapes, and warm hospitality of the Emerald Isle.&#9752</p>
     </section>
-
     <section class="image-scroll">
         <h2>Gallery</h2>
         <div class="image-grid">
-            <img src="images/picture_wall.jpeg" alt="picture wall at the whisky museum" width="200" tabindex="0">
-            <img src="images/white_castle.jpeg" alt="Kilkenny" width="200" tabindex="0">
-            <img src="images/tree.jpeg" alt="Galway" width="200" tabindex="0">
-            <img src="images/bus.jpeg" alt="bus" width="200" tabindex="0">
-            <img src="images/whisky_museum.jpeg" alt="whisky museum" width="200" tabindex="0">
-        </div>
-    </section>
+            <figure>
+                <a href="images/kilkenny/kcastle.jpeg" data-lightbox="Intro" data-title="Myself on the bridge"><img src="images/kilkenny/kcastle.jpeg" alt="myself pointing at the castle on a bridge" width="200" tabindex="0"></a>
+                <figcaption>Myself on the bridge</figcaption>
+            </figure>
+            <figure>
+                <a href="images/me.jpeg" data-lightbox="Intro" data-title="Me with cows"><img src="images/me.jpeg" alt="me with cows by the cliffs of Moher" width="200" tabindex="0"></a>
+                <figcaption>Me with cows</figcaption>
+            </figure>
+            <figure>
+                <a href="images/coffe_cup.jpeg" data-lightbox="Intro" data-title="Coffee with flowers at Trinity College"><img src="images/coffe_cup.jpeg" alt="Coffee with flowers at Trinity College" width="200" tabindex="0"></a>
+                <figcaption>Coffee with flowers at Trinity College</figcaption>
+            </figure>
+            <figure>
+                <a href="images/bus.jpeg" data-lightbox="Intro" data-title="Dublin bus"><img src="images/bus.jpeg" alt="Dublin bus running" width="200" tabindex="0"></a>
+                <figcaption>Dublin bus</figcaption>
+            </figure>
+        </div></section>
 </main>
 <footer>
-    <p>&copy; 2024 Exploring Ireland: A Study Abroad Journey</p>
+    <p>&copy; Annabel Zhuang 2024 Study Abroad to Ireland</p>
 </footer>
-
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
