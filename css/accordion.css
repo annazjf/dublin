@@ -34,7 +34,7 @@
     border:5px solid grey;
   }
 
-  .active h3, .active time{
+  .active h2, .active time{
     color: white;
     font-size: 24px;
   }
@@ -49,23 +49,30 @@
 
   .accordion:after {
     content: '\02795 Open it here'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
     float: right;
     margin-left: 5px;
   }
   
   .active:after {
-    content: '\2796 Close it here'; 
-    font-size: 13px;
+    content: '- Close it here'; 
+    font-size: 18px;
     color: #ffffff;
     float: right;
     margin-left: 5px;
 
   }
 
-  .active :hover {
+  .active:hover {
     text-decoration-color: black;
+    background-color: rgba(12,104,71,.75);
+  }
+  
+  
+  .active h2{
+    text-decoration-color: rgb(255, 255, 255);
+    color: white;
   }
   
   

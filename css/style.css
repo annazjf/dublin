@@ -25,7 +25,7 @@ h1, h2, h3{
     font-family: Calibri,Arial,Helvetica,Sans-Serif;
 }
 
-h3{
+h3, h2{
     margin-top: 45px;
 }
 
@@ -140,7 +140,7 @@ h1{
 }
 
 #main {
-    padding: 20px; 
+    padding: 10px; 
 }
 #main h1{
     color:#0a0a0a
@@ -160,13 +160,14 @@ article {
     border: 1px solid #ccc;
 }
 
-article h3 {
+article h2 {
     color: #333; /* Darken the color of the heading */
     margin-top: 0; /* Remove default margin for the heading */
+    font-size:30px;
 }
 
 article time {
-    color: #666; /* Darken the color of the publication date */
+    color: black; /* Darken the color of the publication date */
     font-style: italic; /* Italicize the publication date */
 }
 
@@ -176,7 +177,7 @@ article p {
 
 article a {
     display: block;
-    color: #007bff; 
+    color:#737373; 
     text-decoration:underline; 
     font-weight: bold;
 
@@ -189,6 +190,12 @@ article figure {
 }
 
 
+#arti article .image-scroll figure{
+    transform: rotate(0deg) !important;
+    animation: none !important;
+    opacity: 1;
+    width: 90%;
+}
 /* Styles for the scrollable image gallery */
 .image-grid {
    display: grid;
@@ -224,7 +231,7 @@ article figure {
 
 .image-scroll figure:nth-child(odd) {
     transform: rotate(-25deg);
-    animation: photomove1 1s;
+    animation: photomove1 5s;
 }
 
 
@@ -233,6 +240,11 @@ article figure {
     transform: rotate(0deg);
     position: relative;
 }
+/* .image-scroll figure:nth-child(2n+3) {
+    animation: photomove3 4s;
+    transform: rotate(0deg);
+    position: relative;
+} */
 
 
 .image-card figure {
@@ -250,8 +262,21 @@ article figure {
     width: 100%;
 }
 
+
+.straight{
+    transform: rotate(0deg) !important;
+    animation: none !important;
+}
+
 .image-card figure:hover {
     opacity: 1;
+}
+
+section .image-card figure.span-middle{
+    grid-column: 1/-1  ;
+    width: 35%;
+    margin: auto;
+    display: block;
 }
 
 footer {
@@ -261,21 +286,41 @@ footer {
     text-align: center; /* Center-align text */
 }
 
+
+.ex { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: px;
+    align-items: stretch;
+    justify-items: center;
+    }
+.ex img{
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+        max-width: 100%;
+}
+
+
+.image-scroll figure{
+    position: relative;
+    bottom: -50;
+}
+
 @keyframes photomove1 {
-    from { transform: rotate(0deg);}
-    to { transform: rotate(-25deg);}
+    from { left: -250px; transform: rotate(0deg);}
+    to { left: 10px;transform: rotate(-25deg);}
   }
 
   @keyframes photomove2 {
-    from { transform: rotate(0deg);}
-    to { transform: rotate(25deg);}
+    from { top: -250px;transform: rotate(0deg);}
+    to { top: 0px; transform: rotate(25deg);}
   }
 
   @keyframes photomove3 {
-    from { transform: rotate(0deg);
-   bottom: 300px }
-    to { transform: rotate(360deg);
-    bottom: 0px}
+    from { right: -550px;transform: rotate(0deg);
+   top: 300px }
+    to { right: 0px;transform: rotate(360deg);
+    right: 0px}
   }
 
 
@@ -283,10 +328,11 @@ footer {
     .image-grid{
         grid-template-columns: 45% 45%;
         grid-gap: 20px;
-        justify-content: space-around;
+        justify-content:space-around;
+        align-items: center;
     }
     #main{ 
-        margin: 30px;
+        margin: 12px;
     }
 
 }
@@ -304,8 +350,16 @@ footer {
         width: 80%;
     }
 
+    .double-grid{
+        grid-template-columns: 45% 45%;
+    }
+
+    .double-grid img{
+        height:auto;
+        object-fit: contain;
+    }
     #main{ 
-        margin: 50px;
+        margin: 15px;
     }
 }
 
@@ -317,10 +371,4 @@ footer {
         
     }
 }
-
-
-
-
-
-
 
